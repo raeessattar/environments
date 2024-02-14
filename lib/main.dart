@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// this must be a constant value
 /// reference: https://github.com/flutter/flutter/issues/59110
-const String app_title = String.fromEnvironment('title');
+const String appTitle = String.fromEnvironment('title');
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(title: app_title),
+      home: const MyHomePage(title: appTitle),
     );
   }
 }
